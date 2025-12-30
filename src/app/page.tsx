@@ -21,7 +21,7 @@ export default function Page() {
       <h1 className="text-3xl font-bold text-center text-white">
         Cornerstone Community Church Yangon
       </h1>
-        <p>Choose your number</p>
+        <p className="text-white text-lg text-center">ကြိုက််နှစ်သက်ရာ ကိန်းဂဏန်းကို ရွေးပါ။</p>
       </div>
       <div className="grid grid-cols-4 gap-2 p-3">
         {Array.from({ length: 150 }).map((n, i) => (

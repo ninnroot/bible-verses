@@ -925,11 +925,11 @@ const VersePage = () => {
 
       <div className="flex items-center justify-center  flex-col gap-6 p-6">
         
-        <p className=" italic">
-          {verses.find((v) => v.no === parseInt(verseId))?.title}
+        <p className="text-lg  max-w-[500px]">
+          "{verses.find((v) => v.no === parseInt(verseId))?.title}"
         </p>
-        <p className="text-lg">
-          "{verses.find((v) => v.no === parseInt(verseId))?.verse}"
+        <p className="italic">
+          {verses.find((v) => v.no === parseInt(verseId))?.verse}
         </p>
       </div>
       <p className="absolute bottom-0  w-full text-end text-[10px] p-3">
