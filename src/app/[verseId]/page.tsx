@@ -926,7 +926,7 @@ const VersePage = () => {
         <p className="text-2xl text-center  max-w-[500px] flex flex-wrap justify-center gap-1.5 font-semibold">
           "{verses.find((v) => v.no === parseInt(verseId))?.title.split(" ").map(t => <span className=" text-nowrap">{t}{" "}</span>)}"
         </p>
-        <p className="italic">
+        <p className="italic text-lg">
           {verses.find((v) => v.no === parseInt(verseId))?.verse}
         </p>
       </div>
