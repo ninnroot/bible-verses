@@ -917,11 +917,13 @@ const VersePage = () => {
           height={150}
         ></Image>
       </div>
+      
+      <div className="overflow-y-scroll h-[500px] no-scrollbar">  
       <p className=" leading-12 text-3xl font-bold text-center m-3">
         ချန်ပီယံများကို မွေးထုတ်ပေးသောနှစ်
       </p>
 
-      <div className="flex items-center justify-center  flex-col gap-6 p-6">
+      <div className="flex items-center justify-center  flex-col gap-6 p-6 ">
         {/* <p className="text-center text-2xl">{verses.find((v) => v.no === parseInt(verseId))?.title}</p> */}
         <p className="text-2xl text-center  max-w-[500px] flex flex-wrap justify-center gap-1.5 font-semibold">
           "{verses.find((v) => v.no === parseInt(verseId))?.title.split(" ").map(t => <span className=" text-nowrap">{t}{" "}</span>)}"
@@ -936,6 +938,7 @@ const VersePage = () => {
           James
         </Link>
       </p>
+      </div>
     </div>
   );
 };
