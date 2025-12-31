@@ -917,16 +917,14 @@ const VersePage = () => {
           height={150}
         ></Image>
       </div>
-      <p className="text-3xl font-bold text-center m-3">ချန်ပီယံများကို မွေးထုတ်ပေးသောနှစ်</p>
-
-      <h1 className="text-3xl font-bold text-center ">
-        Cornerstone Community Church Yangon
-      </h1>
+      <p className=" leading-12 text-3xl font-bold text-center m-3">
+        ချန်ပီယံများကို မွေးထုတ်ပေးသောနှစ်
+      </p>
 
       <div className="flex items-center justify-center  flex-col gap-6 p-6">
-        
-        <p className="text-lg  max-w-[500px]">
-          "{verses.find((v) => v.no === parseInt(verseId))?.title}"
+        {/* <p className="text-center text-2xl">{verses.find((v) => v.no === parseInt(verseId))?.title}</p> */}
+        <p className="text-2xl text-center  max-w-[500px] flex flex-wrap justify-center">
+          "{verses.find((v) => v.no === parseInt(verseId))?.title.split(" ").map(t => <span className=" text-nowrap">{t}{" "}</span>)}"
         </p>
         <p className="italic">
           {verses.find((v) => v.no === parseInt(verseId))?.verse}
